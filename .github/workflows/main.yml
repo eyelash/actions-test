@@ -4,5 +4,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: eyelash/setup-meson@master
-    - run: meson --version
+    - run: |
+        echo '# hello' >> $GITHUB_STEP_SUMMARY
+        echo 'some `text`' >> $GITHUB_STEP_SUMMARY
